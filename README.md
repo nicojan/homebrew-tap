@@ -1,18 +1,12 @@
-# Nicojan Tap
+# nicojan/tap
 
-## How do I install these formulae?
+Homebrew cask for [Chorus](https://github.com/nicojan/Chorus), a native macOS app
+that puts your web services in one window, each with its own isolated session.
 
-`brew install nicojan/tap/<formula>`
-
-Or `brew tap nicojan/tap` and then `brew install <formula>`.
-
-Or, in a `brew bundle` `Brewfile`:
-
-```ruby
-tap "nicojan/tap"
-brew "<formula>"
+```sh
+brew install --cask nicojan/tap/chorus
 ```
 
-## Documentation
-
-`brew help`, `man brew` or check [Homebrew's documentation](https://docs.brew.sh).
+The cask installs the signed, notarized DMG from the Chorus releases page. Chorus
+then updates itself through Sparkle, so `brew upgrade` leaves it alone unless you
+pass `--greedy`.
